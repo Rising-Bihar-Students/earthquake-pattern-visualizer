@@ -1,3 +1,4 @@
+```plaintext
 time        → UTC timestamp of earthquake
 latitude    → Geographic latitude
 longitude   → Geographic longitude
@@ -9,3 +10,4 @@ month       → Extracted from time
 hour        → Extracted from time
 mag_bin     → Categorized magnitude (Minor, Moderate, Strong, Major)
 depth_bin   → Categorized depth (Shallow, Intermediate, Deep)
+```
