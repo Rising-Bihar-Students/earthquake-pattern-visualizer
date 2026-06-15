@@ -1,7 +1,7 @@
-"""SEABOUR"""
+### SEABOUR ###
 
 
-'''JOINTPLOT'''
+'''JOINTPLOT- magnitude vs depth'''
 
 #import os 
 # print("Current Folder:",os.getcwd())
@@ -23,7 +23,7 @@
 
 
 
-'''HEATMAP'''
+'''HEATMAP '''
 
 #import pandas as pd
 # import seaborn as sns
@@ -76,6 +76,7 @@
 
 # plt.show()
 
+
 '''TIMELINE PLOT'''
 
 # import seaborn as sns
@@ -99,3 +100,41 @@
 # plt.xticks(rotation=45)
 
 # plt.show()
+
+
+"""BARPLOT"""
+
+# import pandas as pd
+# import matplotlib.pyplot as plt
+
+# # CSV file load karo
+# df=pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
+
+# # Pehle 20 rows lo taki graph readable rahe
+# plt.figure(figsize=(10,5))
+# plt.bar(df['mag'][:20], df['depth'][:20])
+
+# plt.title("Mag vs Depth")
+# plt.xlabel("Mag")
+# plt.ylabel("Depth")
+# plt.savefig("C:/Users/Deepak Kumar/Desktop/earthquake-pattern-visualizer/images/barplot.jpg")
+
+# plt.show()
+
+
+"""HISTOGRAM"""
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+plt.figure(figsize=(8,5))
+df=pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
+
+sns.histplot(df['mag'], bins=10, kde=True)
+
+plt.title("Distribution of Earthquake Magnitude")
+plt.xlabel("Magnitude")
+plt.ylabel("Count")
+plt.savefig("C:/Users/Deepak Kumar/Desktop/earthquake-pattern-visualizer/images/histogram.jpg")
+
+plt.show()
