@@ -3,17 +3,17 @@
 
 '''JOINTPLOT'''
 
-# import os 
+#import os 
 # print("Current Folder:",os.getcwd())
 
 # import pandas as pd
-# df=pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\GITDEMO.py\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
+# df=pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
 # print(df.head())
 # import seaborn as sns
 # import matplotlib.pyplot as plt
 
 # sns.jointplot(
-#     data= pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\GITDEMO.py\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv"),
+#     data= pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv"),
 #     x='mag',
 #     y='depth',
 #     kind='scatter'
@@ -29,7 +29,7 @@
 # import seaborn as sns
 # import matplotlib.pyplot as plt
 
-# df = pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\GITDEMO.py\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
+# df = pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
 
 # corr = df.corr(numeric_only=True)
 
@@ -46,7 +46,7 @@
 # import seaborn as sns
 # import pandas as pd
 # import matplotlib.pyplot as plt
-# df=pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\GITDEMO.py\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
+# df=pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
 
 # sns.pairplot(
 #    df[["mag","depth","latitude","longitude"]]
@@ -61,7 +61,7 @@
 # import matplotlib.pyplot as plt
 # import pandas as pd
 
-# df=df=pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\GITDEMO.py\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
+# df=df=pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
 # plt.figure(figsize=(10,6))
 
 
@@ -81,7 +81,7 @@
 # import seaborn as sns
 # import pandas as pd
 # import matplotlib.pyplot as plt
-# df=pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\GITDEMO.py\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
+# df=pd.read_csv(r"C:\Users\Deepak Kumar\Desktop\earthquake-pattern-visualizer\data\earthquakes_cleaned.csv")
 
 # df_major = df[df["mag"] >= 6]
 
