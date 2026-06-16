@@ -1,7 +1,19 @@
 import pandas as pd
+from pathlib import Path
+# Project root (two levels up)
+# If running as script
+try:
+    project_root = Path(__file__).resolve().parent.parent
+except NameError:
+    # If in Jupyter/interactive mode
+    project_root = Path.cwd().parent
+
+# Paths
+data_path = project_root / "data"
+
 
 # Load merged dataset
-df = pd.read_csv("D:/earthquake-pattern-visualizer/data/earthquakes_1976_2026.csv")
+df = pd.read_csv(f"{data_path}/earthquakes_1976_2026.csv")
 
 # Convert time column to datetime
 df['time'] = pd.to_datetime(df['time'])
@@ -24,7 +36,7 @@ df = df.drop(columns=[
 ])
 
 # Save cleaned dataset
-df.to_csv("D:/earthquake-pattern-visualizer/data/earthquakes_cleaned.csv", index=False)
+df.to_csv(f"{data_path}/earthquakes_cleaned.csv", index=False)
 
 print("Cleaned dataset saved as earthquakes_cleaned.csv")
 print(df.head())
