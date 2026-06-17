@@ -51,7 +51,7 @@ This document outlines the end-to-end workflow for the Earthquake Pattern Visual
 ---
 
 ### 5. Visualization
-- **Script/Notebook**: `src/visualize.py` or Jupyter notebooks.
+- **Notebook**: `notebooks/visualize.ipynb`.
 - **Process** (Naincy):
   - Scatter/jointplot → Magnitude vs Depth.
   - Heatmap → Frequency by Year/Month.
