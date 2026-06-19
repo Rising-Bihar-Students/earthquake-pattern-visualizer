@@ -45,8 +45,10 @@ We are building a **data science pipeline**:
 ```plaintext
 earthquake-pattern-visualizer/
 ├── data/                # raw CSV files
+├── docs/                # Documentation
+├── Images/              # Plot images
 ├── notebooks/           # Jupyter notebooks for experiments
-├── src/                 # Python scripts (cleaning, plotting)
+├── src/                 # Python scripts (cleaning)
 ├── README.md            # project overview
 ├── requirements.txt     # libraries needed
 ```
