@@ -5,13 +5,12 @@ from pathlib import Path
 try:
     project_root = Path(__file__).resolve().parent.parent
 except NameError:
-    # If in Jupyter/interactive mode
+# If in Jupyter/interactive mode
     project_root = Path.cwd().parent
 
 # Paths
 data_path = project_root / "data"
 
-'''
 # Load CSVs from data folder
 files = [
     f"{data_path}/eq_1976_1985.csv",
@@ -30,7 +29,6 @@ df.to_csv(f"{data_path}/earthquakes_1976_2026.csv", index=False)
 
 print("Merged dataset saved as earthquakes_1976_2026.csv")
 print(df.shape)
-'''
 
 df = pd.read_csv(f"{data_path}/earthquakes_1976_2026.csv")
 

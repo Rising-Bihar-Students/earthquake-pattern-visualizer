@@ -62,6 +62,7 @@ earthquake-pattern-visualizer/
    cd earthquake-pattern-visualizer
    ```
 2. Install dependencies:
+   Create and activate a virtual environment before installing dependencies.
   ```bash
   pip install -r requirements.txt
   ```

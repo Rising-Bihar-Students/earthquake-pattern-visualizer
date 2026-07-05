@@ -5,7 +5,7 @@ from pathlib import Path
 try:
     project_root = Path(__file__).resolve().parent.parent
 except NameError:
-    # If in Jupyter/interactive mode
+# If in Jupyter/interactive mode
     project_root = Path.cwd().parent
 
 # Paths
@@ -24,8 +24,8 @@ df['month'] = df['time'].dt.month
 df['hour'] = df['time'].dt.hour
 
 # Create bins for magnitude and depth
-df['mag_bin'] = pd.cut(df['mag'], bins=[0,3,5,7,10], labels=['Minor','Moderate','Strong','Major'])
-df['depth_bin'] = pd.cut(df['depth'], bins=[0,70,300,700], labels=['Shallow','Intermediate','Deep'])
+df['mag_bin'] = pd.cut(df['mag'], bins = [0,3,5,7,10], labels = ['Minor','Moderate','Strong','Major'])
+df['depth_bin'] = pd.cut(df['depth'], bins = [0,70,300,700], labels = ['Shallow','Intermediate','Deep'])
 
 # Drop unused column
 df = df.drop(columns=["horizontalError", "depthError", "magError"])
